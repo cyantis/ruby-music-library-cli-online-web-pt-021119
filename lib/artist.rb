@@ -19,10 +19,6 @@ class Artist
     Artist.new(name).tap {|s| s.save}
   end
 
-  #def songs
-  #  @songs
-  #end
-
   def add_song(song)
     song.artist = self if !song.artist
     songs << song if !songs.include?(song)
