@@ -14,10 +14,6 @@ module Concerns
     def destroy_all
       all.clear
     end
-
-    def all
-      @@all
-    end
   end
 
   module InstanceMethods
