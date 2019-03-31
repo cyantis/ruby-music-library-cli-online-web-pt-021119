@@ -5,11 +5,11 @@ class Genre
   include Concerns::InstanceMethods
 
   attr_accessor :name
-  #@@all = []
-#
-  #def self.all
-  #  @@all
-  #end
+  @@all = []
+
+  def self.all
+    @@all
+  end
 
   def self.create(name)
     Genre.new(name).tap {|s| s.save}
