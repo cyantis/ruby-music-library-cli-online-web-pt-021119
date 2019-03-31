@@ -16,10 +16,6 @@ class Song
     @@all
   end
 
-  #def self.destroy_all
-  #  all.clear
-  #end
-
   def self.create(name)
     new(name).tap {|s| s.save}
   end

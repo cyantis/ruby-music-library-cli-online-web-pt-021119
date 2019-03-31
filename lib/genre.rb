@@ -2,6 +2,7 @@ require_relative "../config/environment.rb"
 
 class Genre
   extend Concerns::Findable
+  include Concerns::InstanceMethods
   attr_accessor :name
   @@all = []
 
@@ -13,10 +14,6 @@ class Genre
   def self.all
     @@all
   end
-
-  #def self.destroy_all
-  #  all.clear
-  #end
 
   def self.create(name)
     Genre.new(name).tap {|s| s.save}

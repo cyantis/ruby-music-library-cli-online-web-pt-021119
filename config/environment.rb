@@ -16,7 +16,7 @@ module Concerns
     end
   end
 
-  module instance_methods
+  module InstanceMethods
     def save
       all << self
     end
