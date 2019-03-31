@@ -19,13 +19,9 @@ class Artist
     Artist.new(name).tap {|s| s.save}
   end
 
-  #def save
-  #  @@all << self
+  #def songs
+  #  @songs
   #end
-
-  def songs
-    @songs
-  end
 
   def add_song(song)
     song.artist = self if !song.artist
