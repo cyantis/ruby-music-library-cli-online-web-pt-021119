@@ -14,9 +14,9 @@ class Genre
     @@all
   end
 
-  def self.destroy_all
-    all.clear
-  end
+  #def self.destroy_all
+  #  all.clear
+  #end
 
   def self.create(name)
     Genre.new(name).tap {|s| s.save}
