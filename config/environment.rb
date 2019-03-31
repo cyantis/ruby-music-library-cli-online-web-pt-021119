@@ -15,7 +15,7 @@ module Concerns
       all.clear
     end
 
-    def self.all
+    def all
       @@all
     end
   end
