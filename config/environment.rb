@@ -20,6 +20,10 @@ module Concerns
     def save
       self.class.all << self
     end
+
+    def songs
+      @songs
+    end
   end
 end
 
