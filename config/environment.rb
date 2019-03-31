@@ -15,6 +15,12 @@ module Concerns
       all.clear
     end
   end
+
+  module instance_methods
+    def save
+      all << self
+    end
+  end
 end
 
 require_all 'lib'
