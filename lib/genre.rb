@@ -11,17 +11,13 @@ class Genre
     @songs = []
   end
 
-  def self.all
-    @@all
-  end
+  #def self.all
+  #  @@all
+  #end
 
   def self.create(name)
     Genre.new(name).tap {|s| s.save}
   end
-
-  #def songs
-  #  @songs
-  #end
 
   def artists
     songs.collect {|s| s.artist}.uniq
