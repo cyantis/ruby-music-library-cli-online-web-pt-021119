@@ -11,9 +11,9 @@ class Genre
     @songs = []
   end
 
-  #def self.all
-  #  @@all
-  #end
+  def self.all
+    @@all
+  end
 
   def self.create(name)
     Genre.new(name).tap {|s| s.save}
