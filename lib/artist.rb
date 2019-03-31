@@ -11,9 +11,9 @@ class Artist
     @songs = []
   end
 
-  #def self.all
-  #  @@all
-  #end
+  def self.all
+    @@all
+  end
 
   def self.create(name)
     Artist.new(name).tap {|s| s.save}
