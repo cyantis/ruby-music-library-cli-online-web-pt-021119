@@ -17,6 +17,11 @@ module Concerns
   end
 
   module InstanceMethods
+    def initialize(name)
+      @name = name
+      @songs = []
+    end
+
     def save
       self.class.all << self
     end
